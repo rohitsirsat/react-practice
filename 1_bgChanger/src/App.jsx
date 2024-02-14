@@ -44,6 +44,16 @@ function App() {
             <li>
               <div>
                 <button
+                  className="bg-yellow-500 py-2 px-4 rounded-lg"
+                  onClick={() => setColor("yellow")}
+                >
+                  yellow
+                </button>
+              </div>
+            </li>
+            <li>
+              <div>
+                <button
                   className="bg-black py-2 px-4 rounded-lg"
                   onClick={() => setColor("black")}
                 >
