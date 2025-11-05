@@ -18,9 +18,10 @@ function Signup() {
       const data = await apiClient.signup(username, email, password);
 
       console.log("Signup response", data);
-      setLoading(false);
     } catch (error) {
       console.log("Signup Error: ", error);
+    } finally {
+      setLoading(false);
     }
   };
 
